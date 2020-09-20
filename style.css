@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: skyblue;
+}
+
+.wrapper{
+    width: 860px;
+    margin: 5px auto;
+}
+
+.wrapper ul{
+    list-style: none;
+}
+
+.wrapper ul li{
+    background: #1d0000;
+    width: 170px;
+    height: 50px;
+    border: 1px solid rgb(255, 72, 0);
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    color: #ffff;
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+}
+
+.wrapper ul li:hover{
+    background: rgb(61, 61, 61);
+
+}
+
+.wrapper ul ul{
+    display: none;
+}
+
+.wrapper ul li:hover > ul{
+    display: block;
+}
+
+.wrapper ul ul ul{
+    margin-left: 170px;
+    top: 0;
+    position: absolute;
+}
